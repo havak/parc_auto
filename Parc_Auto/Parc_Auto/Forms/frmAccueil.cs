@@ -147,6 +147,16 @@ namespace Parc_Auto
 
         }
 
+        private void supprimerUnePersonneToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toutesLesPersonnesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
 
 
 

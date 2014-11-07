@@ -44,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\FrmSupprimerPersonne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmSupprimerPersonne.Designer.cs">
+      <DependentUpon>FrmSupprimerPersonne.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FSupprimerVoiture.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,8 +80,17 @@
     <Compile Include="Forms\FToutesPersonnes.Designer.cs">
       <DependentUpon>FToutesPersonnes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FToutesVoitures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FToutesVoitures.Designer.cs">
+      <DependentUpon>FToutesVoitures.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\FrmSupprimerPersonne.resx">
+      <DependentUpon>FrmSupprimerPersonne.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FSupprimerVoiture.resx">
       <DependentUpon>FSupprimerVoiture.cs</DependentUpon>
     </EmbeddedResource>
@@ -90,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FToutesPersonnes.resx">
       <DependentUpon>FToutesPersonnes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FToutesVoitures.resx">
+      <DependentUpon>FToutesVoitures.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
