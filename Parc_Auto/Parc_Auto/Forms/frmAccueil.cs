@@ -9,6 +9,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Metier;
 
 namespace Parc_Auto
 {
@@ -17,6 +18,7 @@ namespace Parc_Auto
         public frmAccueil()
         {
             InitializeComponent();
+
         }
 
         #region Sérialisation / Désérialisation Binaire
@@ -27,6 +29,7 @@ namespace Parc_Auto
         /// <param name="e">e</param>
         private void importerBinaireToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Agence uneAgence;
             //On affiche une fenêtre permettant de choisir un fichier à charger
             OpenFileDialog FileDialogBin = new OpenFileDialog();
             FileDialogBin.Title = "Choisissez un fichier";
@@ -78,6 +81,7 @@ namespace Parc_Auto
         /// <param name="e">e</param>
         private void exporterBinaireToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Agence uneAgence= new Agence();
             //On affiche une fenêtre permettant de saisir un fichier dans lequel sauvegarder
             SaveFileDialog FileDialogBin = new SaveFileDialog();
             FileDialogBin.Title = "Saisissez un fichier";
@@ -151,3 +155,4 @@ namespace Parc_Auto
 
     }
 }
+        
