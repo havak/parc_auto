@@ -9,3 +9,11 @@ D:\Cour\TP\SLAM4\Parc_Auto\Parc_Auto\obj\Debug\Parc_Auto.Properties.Resources.re
 D:\Cour\TP\SLAM4\Parc_Auto\Parc_Auto\obj\Debug\Parc_Auto.csproj.GenerateResource.Cache
 D:\Cour\TP\SLAM4\Parc_Auto\Parc_Auto\obj\Debug\Parc_Auto.exe
 D:\Cour\TP\SLAM4\Parc_Auto\Parc_Auto\obj\Debug\Parc_Auto.pdb
+M:\parc_auto\parc_auto\Parc_Auto\bin\Debug\Parc_Auto.exe.config
+M:\parc_auto\parc_auto\Parc_Auto\obj\Debug\Parc_Auto.exe
+M:\parc_auto\parc_auto\Parc_Auto\obj\Debug\Parc_Auto.pdb
+M:\parc_auto\parc_auto\Parc_Auto\obj\Debug\Parc_Auto.csprojResolveAssemblyReference.cache
+M:\parc_auto\parc_auto\Parc_Auto\obj\Debug\Parc_Auto.frmAccueil.resources
+M:\parc_auto\parc_auto\Parc_Auto\obj\Debug\Parc_Auto.Forms.FrmAjouterPersonne.resources
+M:\parc_auto\parc_auto\Parc_Auto\obj\Debug\Parc_Auto.Properties.Resources.resources
+M:\parc_auto\parc_auto\Parc_Auto\obj\Debug\Parc_Auto.csproj.GenerateResource.Cache
