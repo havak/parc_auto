@@ -17,6 +17,16 @@ namespace Parc_Auto.Forms
             InitializeComponent();
         }
 
+        private void bt_FAJouterPersonne_Fermer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bt_FAJouterPersonne_Ajouter_Click(object sender, EventArgs e)
+        {
+
+        }
+
         
     }
 }
