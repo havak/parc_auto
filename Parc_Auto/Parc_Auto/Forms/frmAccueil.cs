@@ -18,7 +18,6 @@ namespace Parc_Auto
         public frmAccueil()
         {
             InitializeComponent();
-
         }
 
         #region Sérialisation / Désérialisation Binaire
@@ -81,7 +80,7 @@ namespace Parc_Auto
         /// <param name="e">e</param>
         private void exporterBinaireToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Agence uneAgence= new Agence();
+            Agence uneAgence;
             //On affiche une fenêtre permettant de saisir un fichier dans lequel sauvegarder
             SaveFileDialog FileDialogBin = new SaveFileDialog();
             FileDialogBin.Title = "Saisissez un fichier";
@@ -123,9 +122,12 @@ namespace Parc_Auto
                 {
                     unFlux.Close();
                 }
+
         #endregion
             }
         }
+
+   
 
 
 
@@ -140,4 +142,3 @@ namespace Parc_Auto
 
     }
 }
-        

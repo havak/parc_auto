@@ -33,6 +33,8 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fichierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.importerBinaireToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exporterBinaireToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gérerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.voitureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajouterUneVoitureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,8 +50,6 @@
             this.toutesLesPersonnesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.importerBinaireToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exporterBinaireToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -81,6 +81,20 @@
             this.fichierToolStripMenuItem.Name = "fichierToolStripMenuItem";
             this.fichierToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.fichierToolStripMenuItem.Text = "Fichier";
+            // 
+            // importerBinaireToolStripMenuItem
+            // 
+            this.importerBinaireToolStripMenuItem.Name = "importerBinaireToolStripMenuItem";
+            this.importerBinaireToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.importerBinaireToolStripMenuItem.Text = "importerBinaire";
+            this.importerBinaireToolStripMenuItem.Click += new System.EventHandler(this.importerBinaireToolStripMenuItem_Click);
+            // 
+            // exporterBinaireToolStripMenuItem
+            // 
+            this.exporterBinaireToolStripMenuItem.Name = "exporterBinaireToolStripMenuItem";
+            this.exporterBinaireToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.exporterBinaireToolStripMenuItem.Text = "exporterBinaire";
+            this.exporterBinaireToolStripMenuItem.Click += new System.EventHandler(this.exporterBinaireToolStripMenuItem_Click);
             // 
             // gérerToolStripMenuItem
             // 
@@ -196,20 +210,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
-            // 
-            // importerBinaireToolStripMenuItem
-            // 
-            this.importerBinaireToolStripMenuItem.Name = "importerBinaireToolStripMenuItem";
-            this.importerBinaireToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
-            this.importerBinaireToolStripMenuItem.Text = "importerBinaire";
-            this.importerBinaireToolStripMenuItem.Click += new System.EventHandler(this.importerBinaireToolStripMenuItem_Click);
-            // 
-            // exporterBinaireToolStripMenuItem
-            // 
-            this.exporterBinaireToolStripMenuItem.Name = "exporterBinaireToolStripMenuItem";
-            this.exporterBinaireToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
-            this.exporterBinaireToolStripMenuItem.Text = "exporterBinaire";
-            this.exporterBinaireToolStripMenuItem.Click += new System.EventHandler(this.exporterBinaireToolStripMenuItem_Click);
             // 
             // frmAccueil
             // 
