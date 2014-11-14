@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Parc_Auto.Forms
 {
-    public partial class FSupprimerVoiture : Form
+    public partial class FSupprimerPersonne : Form
     {
-        public FSupprimerVoiture()
+        public FSupprimerPersonne()
         {
             InitializeComponent();
         }
