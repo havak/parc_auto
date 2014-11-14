@@ -1,1 +1,5 @@
 D:\Cour\TP\SLAM4\Parc_Auto\Metier\obj\Debug\Metier.csprojResolveAssemblyReference.cache
+D:\Cour\TP\SLAM4\Parc_Auto\Metier\bin\Debug\Metier.dll
+D:\Cour\TP\SLAM4\Parc_Auto\Metier\bin\Debug\Metier.pdb
+D:\Cour\TP\SLAM4\Parc_Auto\Metier\obj\Debug\Metier.dll
+D:\Cour\TP\SLAM4\Parc_Auto\Metier\obj\Debug\Metier.pdb

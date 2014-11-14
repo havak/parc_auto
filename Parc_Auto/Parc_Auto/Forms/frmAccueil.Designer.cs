@@ -35,6 +35,9 @@
             this.fichierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.importerBinaireToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exporterBinaireToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.importerXMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exporterXMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gérerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.voitureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ajouterUneVoitureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,9 +53,6 @@
             this.toutesLesPersonnesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.importerXMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exporterXMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -102,6 +102,25 @@
             this.exporterBinaireToolStripMenuItem.Text = "exporterBinaire";
             this.exporterBinaireToolStripMenuItem.Click += new System.EventHandler(this.exporterBinaireToolStripMenuItem_Click);
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(153, 6);
+            // 
+            // importerXMLToolStripMenuItem
+            // 
+            this.importerXMLToolStripMenuItem.Name = "importerXMLToolStripMenuItem";
+            this.importerXMLToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.importerXMLToolStripMenuItem.Text = "importerXML";
+            this.importerXMLToolStripMenuItem.Click += new System.EventHandler(this.importerXMLToolStripMenuItem_Click);
+            // 
+            // exporterXMLToolStripMenuItem
+            // 
+            this.exporterXMLToolStripMenuItem.Name = "exporterXMLToolStripMenuItem";
+            this.exporterXMLToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.exporterXMLToolStripMenuItem.Text = "exporterXML";
+            this.exporterXMLToolStripMenuItem.Click += new System.EventHandler(this.exporterXMLToolStripMenuItem_Click);
+            // 
             // gérerToolStripMenuItem
             // 
             this.gérerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -126,6 +145,7 @@
             this.ajouterUneVoitureToolStripMenuItem.Name = "ajouterUneVoitureToolStripMenuItem";
             this.ajouterUneVoitureToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.ajouterUneVoitureToolStripMenuItem.Text = "Ajouter une voiture";
+            this.ajouterUneVoitureToolStripMenuItem.Click += new System.EventHandler(this.ajouterUneVoitureToolStripMenuItem_Click);
             // 
             // supprimerUneVoitureToolStripMenuItem
             // 
@@ -216,25 +236,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(153, 6);
-            // 
-            // importerXMLToolStripMenuItem
-            // 
-            this.importerXMLToolStripMenuItem.Name = "importerXMLToolStripMenuItem";
-            this.importerXMLToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
-            this.importerXMLToolStripMenuItem.Text = "importerXML";
-            this.importerXMLToolStripMenuItem.Click += new System.EventHandler(this.importerXMLToolStripMenuItem_Click);
-            // 
-            // exporterXMLToolStripMenuItem
-            // 
-            this.exporterXMLToolStripMenuItem.Name = "exporterXMLToolStripMenuItem";
-            this.exporterXMLToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
-            this.exporterXMLToolStripMenuItem.Text = "exporterXML";
-            this.exporterXMLToolStripMenuItem.Click += new System.EventHandler(this.exporterXMLToolStripMenuItem_Click);
             // 
             // frmAccueil
             // 
