@@ -157,6 +157,11 @@ namespace Parc_Auto
 
         }
 
+        private void ajouterUneLocationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
 
 
 

@@ -44,6 +44,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\FLouerVoiture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FLouerVoiture.Designer.cs">
+      <DependentUpon>FLouerVoiture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FRendreVoiture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FRendreVoiture.Designer.cs">
+      <DependentUpon>FRendreVoiture.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmSupprimerPersonne.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +100,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\FLouerVoiture.resx">
+      <DependentUpon>FLouerVoiture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FRendreVoiture.resx">
+      <DependentUpon>FRendreVoiture.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmSupprimerPersonne.resx">
       <DependentUpon>FrmSupprimerPersonne.cs</DependentUpon>
     </EmbeddedResource>

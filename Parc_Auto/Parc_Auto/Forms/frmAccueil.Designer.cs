@@ -166,6 +166,7 @@
             this.ajouterUneLocationToolStripMenuItem.Name = "ajouterUneLocationToolStripMenuItem";
             this.ajouterUneLocationToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.ajouterUneLocationToolStripMenuItem.Text = "Louer une voiture";
+            this.ajouterUneLocationToolStripMenuItem.Click += new System.EventHandler(this.ajouterUneLocationToolStripMenuItem_Click);
             // 
             // supprimerUneLocationToolStripMenuItem
             // 
