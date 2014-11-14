@@ -27,3 +27,10 @@ H:\année2\SI7\Parc_auto\Parc_Auto\Parc_Auto\obj\Debug\Parc_Auto.Forms.FrmAjoute
 H:\année2\SI7\Parc_auto\Parc_Auto\Parc_Auto\obj\Debug\Parc_Auto.Properties.Resources.resources
 H:\année2\SI7\Parc_auto\Parc_Auto\Parc_Auto\obj\Debug\Parc_Auto.csproj.GenerateResource.Cache
 >>>>>>> 838b73f42086af5cb2cdad6707f0ca652a36a235
+M:\parc_auto\parc_auto\Parc_Auto\obj\Debug\Parc_Auto.Forms.FLouerVoiture.resources
+M:\parc_auto\parc_auto\Parc_Auto\obj\Debug\Parc_Auto.Forms.FRendreVoiture.resources
+M:\parc_auto\parc_auto\Parc_Auto\obj\Debug\Parc_Auto.Forms.FSupprimerPersonne.resources
+M:\parc_auto\parc_auto\Parc_Auto\obj\Debug\Parc_Auto.Forms.FAjouterVoiture.resources
+M:\parc_auto\parc_auto\Parc_Auto\obj\Debug\Parc_Auto.Forms.FSupprimerVoiture.resources
+M:\parc_auto\parc_auto\Parc_Auto\obj\Debug\Parc_Auto.Forms.FToutesPersonnes.resources
+M:\parc_auto\parc_auto\Parc_Auto\obj\Debug\Parc_Auto.Forms.FToutesVoitures.resources

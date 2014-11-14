@@ -7,20 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Metier;
 
 namespace Parc_Auto.Forms
 {
-    public partial class FSupprimerVoiture : Form
+    public partial class FRendreVoiture : Form
     {
-        private Voiture uneVoiture;
-        public FSupprimerVoiture()
+        public FRendreVoiture()
         {
-            InitializeComponent();
-        }
-        public FSupprimerVoiture(Voiture voiture)
-        {
-            uneVoiture = voiture;
             InitializeComponent();
         }
     }

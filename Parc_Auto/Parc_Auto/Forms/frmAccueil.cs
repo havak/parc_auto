@@ -136,7 +136,6 @@ namespace Parc_Auto
         /// <param name="e">e</param>
         private void importerXMLToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Agence uneAgence;
             OpenFileDialog fileDialogXML = new OpenFileDialog();
             fileDialogXML.Title = "Choisissez un fichier";
             fileDialogXML.Filter = "Fichiers XML (*.xml) | *.xml";
@@ -222,10 +221,24 @@ namespace Parc_Auto
         private void ajouterUneVoitureToolStripMenuItem_Click(object sender, EventArgs e)
         {
             uneVoiture = new Voiture();
-            
+            Forms.FAjouterVoiture unFajouterVoiture = new Forms.FAjouterVoiture(uneVoiture);
+            unFajouterVoiture.ShowDialog();
         }
 
 
+        private void ajouterUneLocationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            uneVoiture = new Voiture();
+            Forms.FLouerVoiture unLouerVoiture = new Forms.FLouerVoiture(uneVoiture);
+            unLouerVoiture.ShowDialog();
+        }
+
+        private void supprimerUneVoitureToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            uneVoiture = new Voiture();
+            Forms.FSupprimerVoiture unFajouterVoiture = new Forms.FSupprimerVoiture(uneVoiture);
+            unSupprimerVoiture.ShowDialog();
+        }
 
 
 

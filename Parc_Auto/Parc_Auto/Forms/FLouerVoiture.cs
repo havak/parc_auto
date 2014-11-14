@@ -10,15 +10,16 @@ using System.Windows.Forms;
 using Metier;
 
 namespace Parc_Auto.Forms
+
 {
-    public partial class FSupprimerVoiture : Form
+    public partial class FLouerVoiture : Form
     {
         private Voiture uneVoiture;
-        public FSupprimerVoiture()
+        public FLouerVoiture()
         {
             InitializeComponent();
         }
-        public FSupprimerVoiture(Voiture voiture)
+        public FLouerVoiture(Voiture voiture)
         {
             uneVoiture = voiture;
             InitializeComponent();
