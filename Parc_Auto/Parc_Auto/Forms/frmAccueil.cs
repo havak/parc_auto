@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Metier;
+using System.Xml.Serialization;
 
 namespace Parc_Auto
 {
@@ -127,7 +128,95 @@ namespace Parc_Auto
             }
         }
 
-   
+        #region Sérialisation / Désérialisation XML
+        /// <summary>
+        /// Méthode de désérialisation XML
+        /// </summary>
+        /// <param name="sender">sender</param>
+        /// <param name="e">e</param>
+        private void importerXMLToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog fileDialogXML = new OpenFileDialog();
+            fileDialogXML.Title = "Choisissez un fichier";
+            fileDialogXML.Filter = "Fichiers XML (*.xml) | *.xml";
+            DialogResult result = fileDialogXML.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                string cheminComplet = "";
+                string nomFichier = "";
+                string chemin = "";
+                cheminComplet = fileDialogXML.FileName;
+                cheminComplet = cheminComplet.Replace("\\", "\\\\");
+                nomFichier = cheminComplet.Substring(cheminComplet.LastIndexOf("\\\\") + 2, cheminComplet.Length - cheminComplet.LastIndexOf("\\\\") - 2);
+                chemin = cheminComplet.Substring(0, cheminComplet.Length - (nomFichier.Length + 2));
+                FileStream stream = null;
+                XmlSerializer serializer;
+                Directory.SetCurrentDirectory(chemin);
+                if (File.Exists(nomFichier))
+                {
+                    try
+                    {
+                        stream = new FileStream(nomFichier, FileMode.Open, FileAccess.Read);
+                        serializer = new XmlSerializer(typeof(Agence));
+                        uneAgence = (Agence)serializer.Deserialize(stream);
+                        stream.Close();
+                        MessageBox.Show("La désérialisation s'est terminée avec succès !", "Désérialisation finie", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("\n" + ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    finally
+                    {
+                        stream.Close();
+                    }
+                }
+            }
+        }
+
+        /// <summary>
+        /// Méthode de désérialisation XML
+        /// </summary>
+        /// <param name="sender">sender</param>
+        /// <param name="e">e</param>
+        private void exporterXMLToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog fileDialogXML = new SaveFileDialog();
+            fileDialogXML.Title = "Saisissez un fichier";
+            fileDialogXML.Filter = "Fichiers XML (*.xml) | *.xml";
+            DialogResult result = fileDialogXML.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                string cheminComplet = "";
+                string nomFichier = "";
+                string chemin = "";
+                cheminComplet = fileDialogXML.FileName;
+                cheminComplet = cheminComplet.Replace("\\", "\\\\");
+                nomFichier = cheminComplet.Substring(cheminComplet.LastIndexOf("\\\\") + 2, cheminComplet.Length - cheminComplet.LastIndexOf("\\\\") - 2);
+                chemin = cheminComplet.Substring(0, cheminComplet.Length - (nomFichier.Length + 2));
+                FileStream stream = null;
+                XmlSerializer serializer;
+                try
+                {
+                    Directory.SetCurrentDirectory(chemin);
+                    stream = new FileStream(nomFichier, FileMode.Create);
+                    serializer = new XmlSerializer(typeof(Agence));
+                    serializer.Serialize(stream, uneAgence);
+                    MessageBox.Show("La sérialisation s'est terminée avec succès !", "Sérialisation finie", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("\n" + ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    stream.Close();
+                }
+            }
+        }
+        #endregion
+
+
 
 
 

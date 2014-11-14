@@ -50,6 +50,9 @@
             this.toutesLesPersonnesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.importerXMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exporterXMLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -77,7 +80,10 @@
             // 
             this.fichierToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.importerBinaireToolStripMenuItem,
-            this.exporterBinaireToolStripMenuItem});
+            this.exporterBinaireToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.importerXMLToolStripMenuItem,
+            this.exporterXMLToolStripMenuItem});
             this.fichierToolStripMenuItem.Name = "fichierToolStripMenuItem";
             this.fichierToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.fichierToolStripMenuItem.Text = "Fichier";
@@ -211,6 +217,25 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(153, 6);
+            // 
+            // importerXMLToolStripMenuItem
+            // 
+            this.importerXMLToolStripMenuItem.Name = "importerXMLToolStripMenuItem";
+            this.importerXMLToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.importerXMLToolStripMenuItem.Text = "importerXML";
+            this.importerXMLToolStripMenuItem.Click += new System.EventHandler(this.importerXMLToolStripMenuItem_Click);
+            // 
+            // exporterXMLToolStripMenuItem
+            // 
+            this.exporterXMLToolStripMenuItem.Name = "exporterXMLToolStripMenuItem";
+            this.exporterXMLToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.exporterXMLToolStripMenuItem.Text = "exporterXML";
+            this.exporterXMLToolStripMenuItem.Click += new System.EventHandler(this.exporterXMLToolStripMenuItem_Click);
+            // 
             // frmAccueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 14F);
@@ -255,6 +280,9 @@
         private System.Windows.Forms.ToolStripMenuItem toutesLesPersonnesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem importerBinaireToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exporterBinaireToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem importerXMLToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exporterXMLToolStripMenuItem;
     }
 }
 
