@@ -16,6 +16,7 @@ namespace Parc_Auto
 {
     public partial class frmAccueil : Form
     {
+        private Agence uneAgence;
         public frmAccueil()
         {
             InitializeComponent();
@@ -29,7 +30,6 @@ namespace Parc_Auto
         /// <param name="e">e</param>
         private void importerBinaireToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Agence uneAgence;
             //On affiche une fenêtre permettant de choisir un fichier à charger
             OpenFileDialog FileDialogBin = new OpenFileDialog();
             FileDialogBin.Title = "Choisissez un fichier";
@@ -81,7 +81,6 @@ namespace Parc_Auto
         /// <param name="e">e</param>
         private void exporterBinaireToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Agence uneAgence;
             //On affiche une fenêtre permettant de saisir un fichier dans lequel sauvegarder
             SaveFileDialog FileDialogBin = new SaveFileDialog();
             FileDialogBin.Title = "Saisissez un fichier";
@@ -237,15 +236,39 @@ namespace Parc_Auto
         private void supprimerUneVoitureToolStripMenuItem_Click(object sender, EventArgs e)
         {
             uneVoiture = new Voiture();
-            Forms.FSupprimerVoiture unFajouterVoiture = new Forms.FSupprimerVoiture(uneVoiture);
+            Forms.FSupprimerVoiture unSupprimerVoiture = new Forms.FSupprimerVoiture(uneVoiture);
             unSupprimerVoiture.ShowDialog();
         }
 
+<<<<<<< HEAD:Parc_Auto/Parc_Auto/Parc_Auto/Forms/frmAccueil.cs
         private void supprimerUnePersonneToolStripMenuItem_Click(object sender, EventArgs e)
         {
             unePersonne = new Personne();
             Forms.FSupprimerPersonne unSupprimerPersonne = new Forms.FSupprimerPersonne(unePersonne);
             unSupprimerPersonne.ShowDialog();
         }
+=======
+        private void supprimerUneLocationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            uneVoiture = new Voiture();
+            Forms.FRendreVoiture rendreUneVoiture = new Forms.FRendreVoiture(uneVoiture);
+            rendreUneVoiture.ShowDialog();
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> d1f7f3f7c08375d4fe42e14ff56dd8bb52e087a2:Parc_Auto/Parc_Auto/Forms/frmAccueil.cs
     }
 }

@@ -7,13 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Metier;
+
 
 namespace Parc_Auto.Forms
 {
     public partial class FRendreVoiture : Form
     {
+        private Voiture uneVoiture;
         public FRendreVoiture()
         {
+            InitializeComponent();
+        }
+
+        public FRendreVoiture(Voiture voiture)
+        {
+            uneVoiture = voiture;
             InitializeComponent();
         }
     }
