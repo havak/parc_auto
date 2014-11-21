@@ -247,6 +247,5 @@ namespace Parc_Auto
             Forms.FSupprimerPersonne unSupprimerPersonne = new Forms.FSupprimerPersonne(unePersonne);
             unSupprimerPersonne.ShowDialog();
         }
-
     }
 }
