@@ -16,6 +16,7 @@ namespace Parc_Auto
 {
     public partial class frmAccueil : Form
     {
+        private Agence uneAgence;
         public frmAccueil()
         {
             InitializeComponent();
@@ -29,7 +30,6 @@ namespace Parc_Auto
         /// <param name="e">e</param>
         private void importerBinaireToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Agence uneAgence;
             //On affiche une fenêtre permettant de choisir un fichier à charger
             OpenFileDialog FileDialogBin = new OpenFileDialog();
             FileDialogBin.Title = "Choisissez un fichier";
@@ -81,7 +81,6 @@ namespace Parc_Auto
         /// <param name="e">e</param>
         private void exporterBinaireToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Agence uneAgence;
             //On affiche une fenêtre permettant de saisir un fichier dans lequel sauvegarder
             SaveFileDialog FileDialogBin = new SaveFileDialog();
             FileDialogBin.Title = "Saisissez un fichier";
@@ -236,9 +235,19 @@ namespace Parc_Auto
         private void supprimerUneVoitureToolStripMenuItem_Click(object sender, EventArgs e)
         {
             uneVoiture = new Voiture();
-            Forms.FSupprimerVoiture unFajouterVoiture = new Forms.FSupprimerVoiture(uneVoiture);
+            Forms.FSupprimerVoiture unSupprimerVoiture = new Forms.FSupprimerVoiture(uneVoiture);
             unSupprimerVoiture.ShowDialog();
         }
+
+        private void supprimerUneLocationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            uneVoiture = new Voiture();
+            Forms.FRendreVoiture rendreUneVoiture = new Forms.FRendreVoiture(uneVoiture);
+            rendreUneVoiture.ShowDialog();
+        }
+
+
+
 
 
 

@@ -196,6 +196,7 @@
             this.supprimerUneLocationToolStripMenuItem.Name = "supprimerUneLocationToolStripMenuItem";
             this.supprimerUneLocationToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.supprimerUneLocationToolStripMenuItem.Text = "Rendre une voiture";
+            this.supprimerUneLocationToolStripMenuItem.Click += new System.EventHandler(this.supprimerUneLocationToolStripMenuItem_Click);
             // 
             // consultationToolStripMenuItem
             // 
