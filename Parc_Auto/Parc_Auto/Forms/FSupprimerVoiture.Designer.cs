@@ -68,7 +68,7 @@
             this.bt_FSupprimerVoiture_supprimer.Name = "bt_FSupprimerVoiture_supprimer";
             this.bt_FSupprimerVoiture_supprimer.Size = new System.Drawing.Size(103, 23);
             this.bt_FSupprimerVoiture_supprimer.TabIndex = 3;
-            this.bt_FSupprimerVoiture_supprimer.Text = "Supprimer Hrant";
+            this.bt_FSupprimerVoiture_supprimer.Text = "Supprimer";
             this.bt_FSupprimerVoiture_supprimer.UseVisualStyleBackColor = true;
             // 
             // bt_FSupprimerVoiture_fermer
