@@ -7,3 +7,8 @@ D:\Cour\TP\SLAM4\Parc_Auto\Metier\obj\Debug\Metier.pdb
 =======
 M:\parc_auto\parc_auto\Metier\obj\Debug\Metier.csprojResolveAssemblyReference.cache
 >>>>>>> fc66adc148d94f1950f614cbcc63a1460dd5c876
+H:\SLAM4\park_auto\parc_auto\Parc_Auto\Metier\bin\Debug\Metier.dll
+H:\SLAM4\park_auto\parc_auto\Parc_Auto\Metier\bin\Debug\Metier.pdb
+H:\SLAM4\park_auto\parc_auto\Parc_Auto\Metier\obj\Debug\Metier.csprojResolveAssemblyReference.cache
+H:\SLAM4\park_auto\parc_auto\Parc_Auto\Metier\obj\Debug\Metier.dll
+H:\SLAM4\park_auto\parc_auto\Parc_Auto\Metier\obj\Debug\Metier.pdb
